@@ -22,7 +22,7 @@ class Queue {
     else {
       this.head = this.head.next
     }
-    return n
+    return n.value
   }
 
   appendRight(val) {
@@ -51,6 +51,7 @@ class Queue {
     while (cur) {
       if (cur.value === id) {
         prev.next = cur.next
+        break
       }
       prev = cur
       cur = cur.next
